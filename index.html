@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de inicio de sesion</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Inicia sesión</h1>
+    <form>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Iniciar sesión</button>
+    </form>
+    <div class="mensaje-error" id="mensaje-error">
+      <p>Ups! Ha habido un error. Por favor, inténtalo de nuevo.</p>
+    </div>
+    <div class="mensaje-exito" id="mensaje-exito">
+      <p>Inicio de sesión exitoso. Redirigiendo...</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

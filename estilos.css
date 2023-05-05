@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to top, #ff8a00, #da1b60);
+}
+
+.contenedor {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  padding: 40px;
+  position: relative;
+}
+
+.contenedor h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #da1b60;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+button {
+  background-color: #da1b60;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8a00;
+}
+
+.mensaje-error,
+.mensaje-exito {
+  position: absolute;
+  bottom: -110px;
+  width: 100%;
+  background-color: #da1b60;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.mensaje-error {
+  background-color: #ff8a00;
+}
+
+.mostrar-mensaje-error,
+.mostrar-mensaje-exito {
+  bottom: 30px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    max-width: 100%;
+    margin: 50px 20px;
+  }
+}
