@@ -27,6 +27,6 @@ Las contribuciones son bienvenidas para mejorar el proyecto. Si deseas realizar 
 5. Envía tus cambios a tu repositorio: `git push origin mi-rama`
 6. Abre una solicitud de extracción en este repositorio.
 
-## Licencia
+## Licencia                     
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles www.andrestejada.com
