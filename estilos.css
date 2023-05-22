@@ -1,86 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(to top, #ff8a00, #da1b60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .contenedor {
-  max-width: 400px;
-  margin: 100px auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #1e88e5, #673ab7, #e91e63, #ff5722);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #d9d9d9, -8px -8px 16px #ffffff;
   padding: 40px;
-  position: relative;
-}
-
-.contenedor h1 {
+  max-width: 400px;
   text-align: center;
-  margin-bottom: 30px;
-  color: #da1b60;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-input {
+/* Estilos adicionales */
+h1 {
+  color: #ffffff;
+}
+
+input[type="email"],
+input[type="password"] {
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background-color: #f2f2f2;
 }
 
-button {
-  background-color: #da1b60;
-  color: #fff;
-  padding: 10px;
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 8px;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  background-color: #ffffff;
+  color: #1e88e5;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #ff8a00;
 }
 
 .mensaje-error,
 .mensaje-exito {
-  position: absolute;
-  bottom: -110px;
-  width: 100%;
-  background-color: #da1b60;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  opacity: 0;
-  transition: opacity 0.3s ease, bottom 0.3s ease;
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .mensaje-error {
-  background-color: #ff8a00;
+  background-color: #ff8a80;
+  color: #b71c1c;
 }
 
-.mostrar-mensaje-error,
-.mostrar-mensaje-exito {
-  bottom: 30px;
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .contenedor {
-    max-width: 100%;
-    margin: 50px 20px;
-  }
+.mensaje-exito {
+  background-color: #81c784;
+  color: #1b5e20;
 }
