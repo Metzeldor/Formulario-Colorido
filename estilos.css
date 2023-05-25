@@ -72,3 +72,20 @@ button[type="submit"] {
   background-color: #81c784;
   color: #1b5e20;
 }
+
+@media (max-width: 600px) {
+  .contenedor {
+    max-width: 300px;
+    padding: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+  }
+}
